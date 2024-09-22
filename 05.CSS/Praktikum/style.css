@@ -73,6 +73,7 @@
     background-color: #FFF;
     border: #444;
     color: black;
+    transition: 0.7s;
   }
 
   button.btn-secondary{
@@ -95,6 +96,7 @@
     background-color: black;
     border: white;
     color: white;
+    transition: 0.7s;
   }
 
    /* Newsletter section */
@@ -121,6 +123,13 @@
     font-family: "Open Sans";
   }
 
+  .newsletter-section .form-input {
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
   .newsletter-section form input[type="email"] {
     width: 45%;
     height: 42.5px;
@@ -129,8 +138,8 @@
     border: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
-    position: absolute;
-    right: 390px;
+    position: relative;
+    left: 5%;
   }
   
   .newsletter-section form button {
@@ -149,7 +158,8 @@
     border: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-    left: 237px;
+    right: 5%;
+    top: 0.12rem;
   }
 
   footer {
@@ -263,6 +273,56 @@
     text-decoration: none;
     color: #47B2E4;
   }
+  
 
+/* Responsiveness */
+@media (max-width: 992px) {
+  .hero-section {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+  }
+
+  .hero-section div {
+      margin: 20px 0;
+  }
+
+  .hero-section h2 {
+      font-size: 20px;
+      line-height: 42px;
+  }
+
+  .hero-section p {
+      font-size: 20px;
+      line-height: 26px;
+  }
+
+  button.btn-primary, button.btn-secondary {
+      width: 100%;
+      margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section h2 {
+      font-size: 15px;
+      line-height: 36px;
+  }
+
+  .hero-section p {
+      font-size: 18px;
+      line-height: 24px;
+  }
+
+  .hero-section .image-section img {
+      width: 100%;
+      height: auto;
+  }
+
+  button.btn-primary, button.btn-secondary {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+}
 
  
