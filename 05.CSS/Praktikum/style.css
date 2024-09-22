@@ -45,8 +45,7 @@
     font-weight: 500;
     line-height: 28.8px;
     display: flex;
-    margin-bottom: 45px;
-    margin-top: 30px;
+    margin-bottom: 45px;    
   }
 
   .hero-section div button{
@@ -70,6 +69,12 @@
     letter-spacing: 1px;
   }
 
+  button.btn-primary:hover{
+    background-color: #FFF;
+    border: #444;
+    color: black;
+  }
+
   button.btn-secondary{
     background-color: #47B2E4;
     padding: 9px 28.359px 12px 28px;
@@ -84,6 +89,12 @@
     font-weight: 500;
     line-height: 24px; /* 150% */
     letter-spacing: 1px;
+  }
+
+  button.btn-secondary:hover{
+    background-color: black;
+    border: white;
+    color: white;
   }
 
    /* Newsletter section */
