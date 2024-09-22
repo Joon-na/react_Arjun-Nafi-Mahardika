@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+</head>
+<body>
+
+    <h1>Create Product</h1>
+    <h2>Detail Product</h2>
+
+    <form action="#" method="post">
+        <!-- Product Name -->
+        <label for="product-name">Product name :</label><br>
+        <input type="text" id="product-name" name="product-name" minlength="6" maxlength="50" required><br><br>
+
+        <!-- Product Category -->
+        <label for="product-category">Product Category :</label><br>
+        <select id="product-category" name="product-category" required>
+            <option value=""></option>
+            <option value="Cat1">First Category</option>
+            <option value="Cat2">Second Category</option>
+        </select><br><br>
+
+        <!-- Product Freshness -->
+        <label>Product Freshness :</label><br>
+        <input type="radio" id="brand-new" name="product-freshness" value="Brand New" required>
+        <label for="brand-new">Brand New</label><br>
+        <input type="radio" id="second-hand" name="product-freshness" value="Second Hand">
+        <label for="second-hand">Second Hand</label><br>
+        <input type="radio" id="refurbished" name="product-freshness" value="Refurbished">
+        <label for="refurbished">Refurbished</label><br><br>
+
+        <!-- Image of Product -->
+        <label for="product-image">Image of Product</label><br>
+        <input type="file" id="product-image" name="product-image" required><br><br>
+
+        <!-- Additional Description -->
+        <label for="additional-description">Additional Description</label><br>
+        <textarea id="additional-description" name="additional-description" rows="4" cols="30" required></textarea><br><br>
+
+        <!-- Product Price -->
+        <label for="product-price">Product price :</label><br>
+        <label>$</label>
+        <input type="number" id="product-price" name="product-price" min="0" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
