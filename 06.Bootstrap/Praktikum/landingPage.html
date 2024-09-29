@@ -14,10 +14,15 @@
 <body>
     <!-- Header Section -->
     <header class="bg-white shadow">
-        <div class="container mx-auto flex justify-between items-center pl-[16px] pr-[34px] py-[8.5px]">
-            <div class="font-[Roboto] text-[24px] not-italic font-medium leading-[normal] tracking-[-0.32px]">
-                Simple header
+    <div class="container mx-auto px-6 py-4">
+        <!-- Menggunakan Tailwind Grid untuk Navbar -->
+        <div class="grid grid-cols-2 items-center">
+            <div>
+                <div class="font-[Roboto] text-[24px] not-italic font-medium leading-[normal] tracking-[-0.32px]">
+                    Simple header
+                </div>
             </div>
+
             <nav class="flex justify-end items-center gap-[8px]">
                 <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">Home</a>
                 <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">Features</a>
@@ -26,14 +31,21 @@
                 <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">About</a>
             </nav>
         </div>
-    </header>
+    </div>
+</header>
+
 
   <!-- Hero Section -->
   <section class="hero-section">
     <div>
         <h2>Better Solutions For Your Business</h2>
         <p>We are a team of talented designers making websites with Bootstrap</p>
-        <a href="createProduct.html"><button type="button" class="btn-primary">Get Started</button></a>
+        <!-- Button with Tooltip -->
+        <a href="createProduct.html">
+            <button type="button" class="btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Let's Get Started Here">
+              Get Started
+            </button>
+        </a>
         <a href="#"><button type="button" class="btn-secondary">Watch Video</button></a>
     </div>
 

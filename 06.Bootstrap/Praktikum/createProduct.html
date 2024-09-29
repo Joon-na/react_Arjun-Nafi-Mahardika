@@ -13,20 +13,26 @@
 <body>
     <!-- Header Section -->
     <header class="bg-white shadow">
-        <div class="container mx-auto flex justify-between items-center pl-[16px] pr-[34px] py-[8.5px]">
-            <div class="font-[Roboto] text-[24px] not-italic font-medium leading-[normal] tracking-[-0.32px]">
-                Simple header
+        <div class="container mx-auto px-6 py-4">
+            <!-- Menggunakan Tailwind Grid untuk Navbar -->
+            <div class="grid grid-cols-2 items-center">
+                <div>
+                    <div class="font-[Roboto] text-[24px] not-italic font-medium leading-[normal] tracking-[-0.32px]">
+                        Simple header
+                    </div>
+                </div>
+    
+                <nav class="flex justify-end items-center gap-[8px]">
+                    <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">Home</a>
+                    <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">Features</a>
+                    <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">Pricing</a>
+                    <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">FAQs</a>
+                    <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">About</a>
+                </nav>
             </div>
-            <nav class="flex justify-end items-center gap-[8px]">
-                <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">Home</a>
-                <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">Features</a>
-                <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">Pricing</a>
-                <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">FAQs</a>
-                <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">About</a>
-            </nav>
         </div>
     </header>
-
+    
     <!-- Main Section -->
     <main class="container mx-auto px-6 py-8 md:max-w-[936px]">
             <div>
