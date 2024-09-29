@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Add SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- Add SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -40,11 +44,11 @@
                     <img src="bootstrap-logo.svg" alt="bootstrap-logo">
                 </div>
                 <h1 class="mt-[23px] text-[#212529] text-center font-[Roboto] text-[31px] not-italic font-medium leading-[38.4px]">Create Product</h1>
-                <p class="mt-[8.39px] mb-4 text-[#212529] text-center font-[Roboto] text-[20px] not-italic font-light leading-[30px]">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing </p>
+                <p class="mt-[8.39px] mb-4 text-[#212529] text-center font-[Roboto] text-[20px] not-italic font-light leading-[30px]">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing </p>
             </div>
 
             
-            <form action="#" method="post" class="px-[140px] mt-12">
+            <form id="productForm" action="#" method="post" class="px-[140px] mt-12">
                 <h1 class="items-start font-[Roboto] text-[23px] not-italic font-medium leading-[28.8px] mb-4">Detail Product</h1>
                 <!-- Product Name -->
                 <div>
@@ -90,6 +94,71 @@
                 <div class="flex justify-center"><input class="rounded-[4.8px] border-[1px] text-[#FFF] border-[solid] border-[#0D6EFD] bg-[#0D6EFD] flex w-[557px] pl-[209.592px] pr-[209.408px] py-[9px]" type="submit" value="Submit"></div>
             </form>
     </main>
+
+    <script>
+        document.getElementById('productForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic form validation
+            const productName = document.getElementById('product-name').value;
+            const productCategory = document.getElementById('product-category').value;
+            const productPrice = document.getElementById('product-price').value;
+
+            if (!productName || !productCategory || !productPrice) {
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Please fill in all required fields.',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                });
+                return;
+            }
+
+            // Show confirmation dialog
+            Swal.fire({
+                title: 'Confirm Submission',
+                text: 'Are you sure you want to submit this product?',
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonText: 'Yes, submit it!',
+                cancelButtonText: 'No, cancel'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    simulateFormSubmission().then(response => {
+                        if (response.success) {
+                            Swal.fire({
+                                title: 'Success!',
+                                text: 'Your product has been created successfully.',
+                                icon: 'success',
+                                confirmButtonText: 'OK'
+                            }).then(() => {
+                                // Reset form after successful submission
+                                this.reset();
+                            });
+                        } else {
+                            Swal.fire({
+                                title: 'Error!',
+                                text: 'There was an error creating your product. Please try again.',
+                                icon: 'error',
+                                confirmButtonText: 'OK'
+                            });
+                        }
+                    });
+                }
+            });
+        });
+
+    
+        function simulateFormSubmission() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    // Simulate a successful submission 80% of the time
+                    const success = Math.random() < 0.8;
+                    resolve({ success: success });
+                }, 1000); // Delay 1 second
+            });
+        }
+    </script>
 
 </body>
 </html>
