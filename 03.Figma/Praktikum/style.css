@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+    background-color: #f8f9fa;
+  }
+
+  .hero-section{
+    display: flex;
+    align-items: center;
+    background: #37517E;
+    height: 760px;
+  }
+
+  .hero-section div{
+    margin-top: 153px;
+    margin-left: 82px;
+    margin-bottom: 80px;
+  }
+
+  .hero-section div h2{
+    color: #FFF;
+    font-family: Jost;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+  }
+
+  .hero-section div .image-section{
+    width: 636px;
+    height: 527px;
+  }
+
+  .hero-section div p{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Jost;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.8px;
+    display: flex;
+    margin-bottom: 45px;    
+  }
+
+  .hero-section div button{
+    row-gap: 25px;
+    cursor: pointer;
+  }
+
+  button.btn-primary{
+    background-color: #47B2E4;
+    padding: 9px 28.359px 12px 28px;
+    border-radius: 50px;
+    background: #47B2E4;
+    border: none;
+    color: white;
+    color: #FFF;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 1px;
+  }
+
+  button.btn-primary:hover{
+    background-color: #FFF;
+    border: #444;
+    color: black;
+    transition: 0.7s;
+  }
+
+  button.btn-secondary{
+    background-color: #47B2E4;
+    padding: 9px 28.359px 12px 28px;
+    border-radius: 50px;
+    background: transparent;
+    border: none;
+    color: white;
+    color: #FFF;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 1px;
+  }
+
+  button.btn-secondary:hover{
+    background-color: black;
+    border: white;
+    color: white;
+    transition: 0.7s;
+  }
+
+   /* Newsletter section */
+   .newsletter-section {
+    background-color: #f3f5fa;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .newsletter-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    color: #37517e;
+    margin-bottom: 16px;
+  }
+  
+  .newsletter-section p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #444444;
+    margin-bottom: 30px;
+    font-family: "Open Sans";
+  }
+
+  .newsletter-section .form-input {
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .newsletter-section form input[type="email"] {
+    width: 45%;
+    height: 42.5px;
+    padding: 6px 15px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    position: relative;
+    left: 5%;
+  }
+  
+  .newsletter-section form button {
+    width: 100%;
+    max-width: 150px;
+    height: 42.5px;
+    border-radius: 50px;
+    background: #47b2e4;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    right: 5%;
+    top: 0.12rem;
+  }
+
+  footer {
+    background-color:#FFF;;
+    color: white;
+    padding: 60px 80px 30px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  footer .column-1,
+  footer .column-2,
+  footer .column-3,
+  footer .column-4 {
+    flex-basis: 22%;
+    margin-bottom: 20px;
+  }
+
+  footer .column-2 h3,
+  footer .column-3 h3,
+  footer .column-4 h3 {
+    color: #37517E;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.2px; /* 120% */
+  }
+
+  footer .column-2 a,
+  footer .column-3 a,
+  footer .column-4 a {
+    color: #777;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    padding: 8px;
+    text-decoration: none;
+  }
+  
+  footer .column-4 p {
+    color: #444;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 150% */
+    margin-bottom: 17px;
+  }
+
+  footer h3 {
+    margin-bottom: 20px;
+    color: #37517E;
+    font-family: Jost;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 100% */
+  }
+
+  footer .column-1 p{
+    color: #5E5E5E;
+    font-family: Jost;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+  
+  footer a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons a {
+    width: 36px;
+    height: 36px;
+    background-color: #47b2e4;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  /* Copyright */
+  .copyright {
+    background-color: #3b5998;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.5px;
+  }
+
+  .copyright p a{
+    text-decoration: none;
+    color: #47B2E4;
+  }
+  
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .hero-section {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+  }
+
+  .hero-section div {
+      margin: 20px 0;
+  }
+
+  .hero-section h2 {
+      font-size: 20px;
+      line-height: 42px;
+  }
+
+  .hero-section p {
+      font-size: 20px;
+      line-height: 26px;
+  }
+
+  button.btn-primary, button.btn-secondary {
+      width: 100%;
+      margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section h2 {
+      font-size: 15px;
+      line-height: 36px;
+  }
+
+  .hero-section p {
+      font-size: 18px;
+      line-height: 24px;
+  }
+
+  .hero-section .image-section img {
+      width: 100%;
+      height: auto;
+  }
+
+  button.btn-primary, button.btn-secondary {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+}
+
+ 
