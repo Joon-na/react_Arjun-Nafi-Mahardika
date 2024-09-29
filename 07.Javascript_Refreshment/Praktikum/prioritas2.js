@@ -1,3 +1,6 @@
+// Soal Prioritas 2
+
+// Async-Await
 async function fetchData() {
     console.log("Starting to fetch data...");
 
@@ -26,3 +29,18 @@ async function main() {
 }
 
 main();
+
+// Classes
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    introduce() {
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+    }
+}
+
+const person = new Person("Arjun", 20);
+person.introduce();
