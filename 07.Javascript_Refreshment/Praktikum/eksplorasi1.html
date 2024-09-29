@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 h-screen flex flex-col items-center justify-center">
+    <div id="quote" class="text-2xl text-center mb-8 p-6 bg-white rounded-lg shadow-md max-w-2xl min-h-[150px] flex items-center justify-center transition-opacity duration-500 ease-in-out">
+    </div>
+    <button onclick="displayQuote()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
+        Generate Quote
+    </button>
+
+    <script>
+        const quotes = [
+            'Batasan satu-satunya untuk esok adalah keraguan kita hari ini.',
+            'Tujuan hidup kita adalah untuk bahagia.',
+            'Hidup adalah apa yang terjadi saat kita sibuk membuat rencana lain.'
+        ];
+
+        function displayQuote() {
+            const quoteElement = document.getElementById('quote');
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            
+            quoteElement.textContent = quotes[randomIndex];;
+        }
+        displayQuote();
+    </script>
+</body>
+</html>
