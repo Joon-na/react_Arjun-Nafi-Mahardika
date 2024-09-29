@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex justify-between items-center pl-[16px] pr-[34px] py-[8.5px]">
+            <div class="font-[Roboto] text-[24px] not-italic font-medium leading-[normal] tracking-[-0.32px]">
+                Simple header
+            </div>
+            <nav class="flex justify-end items-center gap-[8px]">
+                <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">Home</a>
+                <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">Features</a>
+                <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">Pricing</a>
+                <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">FAQs</a>
+                <a href="#" class="text-[#0D6EFD] px-[16px] py-[12px] rounded-[4px] hover:bg-[#0D6EFD] hover:text-white">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container mx-auto px-6 py-8 md:max-w-[936px]">
+            <div>
+                <div class="icon flex justify-center mt-[48px]">
+                    <img src="bootstrap-logo.svg" alt="bootstrap-logo">
+                </div>
+                <h1 class="mt-[23px] text-[#212529] text-center font-[Roboto] text-[31px] not-italic font-medium leading-[38.4px]">Create Product</h1>
+                <p class="mt-[8.39px] mb-4 text-[#212529] text-center font-[Roboto] text-[20px] not-italic font-light leading-[30px]">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing </p>
+            </div>
+
+            
+            <form action="#" method="post" class="px-[140px] mt-12">
+                <h1 class="items-start font-[Roboto] text-[23px] not-italic font-medium leading-[28.8px] mb-4">Detail Product</h1>
+                <!-- Product Name -->
+                <div>
+                    <div class="mb-[9.5px]"><label class="mb-4" for="product-name">Product name :</label><br></div>
+                    <input type="text" id="product-name" name="product-name" class="rounded-[4px] border-[1px] border-[solid] border-[#CED4DA] bg-[#FFF]" minlength="6" maxlength="50" required><br><br>
+                </div>
+                <!-- Product Category -->
+                <div class="mb-[9.5px]"><label for="product-category">Product Category :</label><br></div>
+                <select class="rounded-[4px] border-[1px] border-[solid] border-[#CED4DA] bg-[#FFF]" id="product-category" name="product-category" required>
+                    <option value=""></option>
+                    <option value="Cat1">First Category</option>
+                    <option value="Cat2">Second Category</option>
+                </select><br><br>
+                
+                <!-- Image of Product -->
+                <div class="mb-[11.69px]"><label for="product-image">Image of Product</label><br></div>
+                <label for="file-upload" class="custom-file-upload rounded-tl-[4px] rounded-br-none rounded-tr-none rounded-bl-[4px] border-[1px] border-[solid] border-[#0D6EFD] font-[Roboto] text-[13px] not-italic font-normal bg-[#0D6EFD] text-[white] h-[32px] px-[12px] py-[7px] cursor-pointer">
+                    Choose File
+                </label>
+                <label for="file-upload" class="flex inline-flex bg-[#0D6EFD] rounded-tl-none rounded-br-[4px] rounded-tr-[4px] rounded-bl-none border-[1px] border-[solid] border-[#0D6EFD] font-[Roboto] text-[13px] not-italic font-normal bg-[#FFF] text-[#0D6EFD] h-[31px] px-[12px] py-[5.7px] cursor-pointer">No File Choosen</label>
+                <input id="file-upload" type="file" class="hidden" />
+
+                <!-- Product Freshness -->
+                <div class="mt-[35px] mb-[5.5px]">
+                    <label>Product Freshness :</label><br>
+                    <input type="radio" id="brand-new" name="product-freshness" value="Brand New" required>
+                    <label for="brand-new">Brand New</label><br>
+                    <input type="radio" id="second-hand" name="product-freshness" value="Second Hand">
+                    <label for="second-hand">Second Hand</label><br>
+                    <input type="radio" id="refurbished" name="product-freshness" value="Refurbished">
+                    <label for="refurbished">Refurbished</label><br>
+                </div>
+
+
+                <!-- Additional Description -->
+                <div class="mb-[10.69px]"><label for="additional-description">Additional Description</label></div>
+                <textarea class="rounded-[4px] border-[1px] border-[solid] border-[#CED4DA] bg-[#FFF] w-[603px] h-[116px] pl-[12px] pr-[12px] py-[5px] items-start" id="additional-description" name="additional-description" rows="4" cols="30" required></textarea><br><br>
+
+                <!-- Product Price -->
+                <label for="product-price">Product price :</label><br>
+                <label>$</label>
+                <input class="rounded-[4px] mb-[20px] border-[1px] border-[solid] border-[#CED4DA] bg-[#FFF] w-[592px]" type="number" id="product-price" name="product-price" min="0" required><br><br>
+                <div class="flex justify-center"><input class="rounded-[4.8px] border-[1px] text-[#FFF] border-[solid] border-[#0D6EFD] bg-[#0D6EFD] flex w-[557px] pl-[209.592px] pr-[209.408px] py-[9px]" type="submit" value="Submit"></div>
+            </form>
+    </main>
+
+</body>
+</html>
