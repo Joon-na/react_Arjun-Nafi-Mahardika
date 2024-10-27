@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="flex flex-col justify-center items-center px-4 sm:px-8 lg:px-16">
         <img
           className="w-[200px] h-[180px] sm:w-[251px] sm:h-[223px] mt-8 sm:mt-16 mb-6 sm:mb-8"
-          src="../src/assets/avatar.png"
+          src="/avatar.png"
           alt="avatar"
         />
         <h1 className="font-poppins text-[40px] sm:text-[55px] font-extrabold leading-tight text-white text-center">

@@ -15,13 +15,13 @@ const Footer = () => {
           <h4 className="text-xl font-semibold mb-4">Follow Me</h4>
           <div className="flex w-28 gap-2">
             <a href="https://www.instagram.com/arjunnafi17/">
-              <img src="../src/assets/instagram.svg" alt="" />
+              <img src="/instagram.svg" alt="instagram" />
             </a>
             <a href="">
-              <img src="../src/assets/twitterx.svg" alt="" />
+              <img src="/twitterx.svg" alt="twitter" />
             </a>
             <a href="https://www.linkedin.com/in/arjun-nafi-mahardika-621b8a157/?originalSubdomain=id">
-              <img src="../src/assets/linkedin.svg" alt="" />
+              <img src="/linkedin.svg" alt="linkedin" />
             </a>
           </div>
         </div>

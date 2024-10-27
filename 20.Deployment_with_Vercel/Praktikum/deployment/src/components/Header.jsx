@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <nav className="w-full h-[82.182px] flex justify-between items-center bg-[#222] shadow-md px-6 sm:px-12 lg:px-40">
-      <img className="w-12" src="../src/assets/logo.png" alt="logo" />
+      <img className="w-12" src="/logo.png" alt="logo" />
 
       {/* Hamburger Menu Button */}
       <div className="sm:hidden flex items-center">
